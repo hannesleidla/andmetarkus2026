@@ -50,27 +50,3 @@ Survey dataset didn't have a unique key column. I created a new column "AnswerKe
 In HR dataset, I removed columns with personal data: "First Name", "Last Name" and "Email". Also removed the column "Employment Status" as the data in that column was not up to date according to the HR department.  
 Column "Salary" was changed to Decimal Number format.
 
-<<<<<<< HEAD
-=======
-Recommendations
-Based on the analysis, it is recommended to look over the pricing model as products that have an higher cost of producing are being sold at the same price as products with a lower cost of producing.
-
-# Employee Report
-
-## Problem Statement
-HR dapartment wants an overview of active and left employees over time and results of the satisfaction survey.
-
-## Plan
-I will create a Power BI report to give this overview.
-
-## Data
-HR department gave me two files:
-- "Employee_Satisfaction_Survey.xlsx"
-- "HR_dataset.CSV"
-
-  ### Data Cleaning
-  I checked data for uniqueness, formats and outliers through PowerQuery.
-  Survey dataset didn't have unique key column. I created a new column "AnswerKey" which combined "Question Round" and "AnswerID".
-  In HR dataset I removed columns with personal data: "First Name", "Last Name" and "Email". Also removed the column "Employment status" as the data in that column was not up to date according to the HR department.
-  Column "Salary" was changed to Decimal Number format.
->>>>>>> 173149a4db51908372a00ecf4d7b5b5a72aa4f6f
