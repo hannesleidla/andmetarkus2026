@@ -1,20 +1,29 @@
-siin on andmetarkuse kursuse materjalid
+Siin on andmetarkuse kursuse materjalid.
 
-# Sales Report
+Sales Report
 You can find the Power BI file for Sales Report: https://github.com/virverani/andmetarkus2026/blob/main/SalesReport.pbix
 This file can be opened in Power BI Desktop.
-Next, the analysis steps are explained.
+The goal of this report was to provide an overview of sales and profitability and analyze how profitability could be increased.
 
-## Overview of Dataset
-This is an example dataset created by OpenAI.
+Overview of Dataset
+This is an example dataset provided during a data analytics course. The dataset included 7 tables: image
 
-## Data Cleaning
+Data Cleaning
 The original table was "SalesTable.csv" which was controlled for data quality through PowerQuery.
-I checked for format issues and outliers.
+I checked for format issues and outliers and asked the author of the dataset if and how the outliers should be fixed. I created a new file "SalesTableCleaned.csv" with corrected data.
 
-Fixes made:
-1) CustomerID:
-1) CustomerID: C005 peaks olema C004, muudetud alusfailis 31.03.2026 müügiesindaja sisendi põhjal
-2) ProductID: P005 ja P006 peaks olema P004, muudetud alusfailis 31.03.2026 müügiesindaja sisendi põhjal
-3) Vigane kogus müügireal S00009, oli 300, muudetud 3-ks puhastatud failis 31.03.2026 müügiesindaja sisendi põhjal
-4) Vigane kogus müügireal S00010, oli 2000, muudetud 20-ks puhastatud failis 31.03.2026 müügiesindaja sisendi põhjal
+Errors found and fixes made:
+
+CustomerID: C005 had only two sales, dataset owner gave the information that these should be C004.
+ProductID: P005 and P006 had only few sales, dataset owner gave the information that these should be P004.
+Quantity: Had a maximum value of 300 when all other sales were less than 10 units, dataset owner gave the information that this should be 3.
+UnitPrice: Had a maximum value of 2000 when all other sales were less than 100 euros per unit, dataset owner gave the information that this should be 20.
+Analysis
+I created pages for YTD Sales, Sales vs Budget and Profitability views by Product, Sales Representative and Region.
+During the analysis, I noticed that two products: Device D and Gadget C have lower profitability than other products:
+image
+
+I checked if this is caused by the cost of producing these products or by the discounts made. The analysis showed that the cause is cost of these products being higher than the other two products: image
+
+Recommendations
+Based on the analysis, it is recommended to look over the pricing model as products that have an higher cost of producing are being sold at the same price as products with a lower cost of producing.
