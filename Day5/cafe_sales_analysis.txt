@@ -1,0 +1,4 @@
+SELECT item_cleaned, sum(quantity), sum(total_spent_calc)
+FROM sales_table_cleaned
+GROUP BY item_cleaned
+ORDER BY sum(total_spent_calc) DESC;
