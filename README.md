@@ -1,7 +1,7 @@
 Siin on andmetarkuse kursuse materjalid. 
 
 # Sales Report 
-You can find the Power BI file for Sales Report: https://github.com/virverani/andmetarkus2026/blob/main/SalesReport.pbix  
+You can find the Power BI file for Sales Report: https://github.com/virverani/andmetarkus2026/blob/main/SalesReport/SalesReport.pbix
 This file can be opened in Power BI Desktop.  
 The goal of this report was to provide an overview of sales and profitability and analyze how profitability could be increased.
 
